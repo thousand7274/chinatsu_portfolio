@@ -1,3 +1,8 @@
+.plofile{
+  display: flex;
+  flex-direction: column;
+}
+
 
 /* MediaQuery */
 @media only screen and (min-width: $break-point-pc) {
@@ -10,7 +15,6 @@
   &__img{
     margin-right: 30px;
   }
-
 
 }
 
