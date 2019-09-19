@@ -1,13 +1,26 @@
+
 .language{
+  font-size: 56px;
+  text-align: center;
+
+  &__bottom{
+    margin-top: 10px;
+  }
+}
+
+/* MediaQuery */
+@media only screen and (min-width: $break-point-pc) {
+  .language{
   font-size: 64px;
   text-align: center;
 
   &__top{
     margin: 40px;
   }
-   & i{
+  & i{
       padding:0 20px;
     }
-
+  }
 
 }
+/* MediaQuery end */

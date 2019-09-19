@@ -2,16 +2,6 @@
 $color-white :#fff;
 $color-blueblack:rgb(0, 13, 196);
 
-.contact{
-  display: flex;
-  flex-direction: column;
-}
-
-/* MediaQuery */
-@media only screen and (min-width: $break-point-pc) {
-
-}
-/* MediaQuery end */
 %text-form{
   // margin:10px;
   height: 30px;
@@ -43,11 +33,11 @@ $color-blueblack:rgb(0, 13, 196);
   min-width: 320px;
   display: flex;
   justify-content: center;
+  flex-direction: column;
 
   &--left{
     display: flex;
     flex-direction: column;
-    padding-right:30px;
 
   }
 
@@ -116,3 +106,22 @@ $color-blueblack:rgb(0, 13, 196);
 
 }
 /* /お問い合わせ */
+
+/* MediaQuery */
+@media only screen and (min-width: $break-point-pc) {
+
+
+  .contact{
+    display: flex;
+    flex-direction: row;
+
+
+    &--left{
+
+    padding-right:30px;
+
+    }
+  }
+
+}
+/* MediaQuery end */

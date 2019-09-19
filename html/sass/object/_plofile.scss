@@ -1,25 +1,37 @@
 .plofile{
   display: flex;
   flex-direction: column;
+  padding:0;
+
+  &__img{
+    max-width:500px;
+
+    & img{
+      width: 100%;
+    }
+  }
 }
 
 
 /* MediaQuery */
 @media only screen and (min-width: $break-point-pc) {
 
-}
-/* MediaQuery end */
-.plofile{
-  display: flex;
 
-  &__img{
-    margin-right: 30px;
+
+  .plofile{
+    display: flex;
+    flex-direction: row;
+
+    &__img{
+      margin-right: 30px;
+    }
+
   }
 
-}
+  .p-text{
+    line-height: 1.7;
+    align-self: center;
 
-.p-text{
-  line-height: 1.7;
-  align-self: center;
-
+  }
 }
+/* MediaQuery end */

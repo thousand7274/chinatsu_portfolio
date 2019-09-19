@@ -1,0 +1,15 @@
+footer{
+  text-align: center;
+  padding: 40px;
+  margin-bottom: 60px;
+}
+
+/* MediaQuery */
+@media only screen and (min-width: $break-point-pc) {
+  footer{
+  text-align: center;
+  padding-top: 40px;
+  margin-bottom: 0;
+  }
+}
+/* MediaQuery end */
