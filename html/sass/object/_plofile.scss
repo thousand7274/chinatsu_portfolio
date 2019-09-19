@@ -1,0 +1,21 @@
+
+/* MediaQuery */
+@media only screen and (min-width: $break-point-pc) {
+
+}
+/* MediaQuery end */
+.plofile{
+  display: flex;
+
+  &__img{
+    margin-right: 30px;
+  }
+
+
+}
+
+.p-text{
+  line-height: 1.7;
+  align-self: center;
+
+}

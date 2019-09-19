@@ -1,0 +1,39 @@
+/* MediaQuery */
+@media only screen and (min-width: $break-point-pc) {
+  #menu{
+    position: fixed;
+ }
+  .menu{
+  display: flex;
+  flex-direction: column;
+  font-size: $font-size * 1.8;
+  margin:5%;
+
+  &__one{
+    display: flex;
+    flex-direction: column;
+
+    & li{
+      padding: 15px;
+      position:relative;
+
+    }
+  }
+
+  &__two{
+    text-align: center;
+    margin-top:20px;
+
+  }
+  &-logo{
+    margin-bottom: 20px;
+
+    // &__list{
+
+    //   }
+    }
+  }
+}
+
+
+/* MediaQuery end */

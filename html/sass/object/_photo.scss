@@ -1,0 +1,15 @@
+/* MediaQuery */
+@media only screen and (min-width:$break-point-pc) {
+  .photo{
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(3, 300px);
+    & img{
+      width: 250px;
+      height: 250px;
+      object-fit: cover; /* この一行を追加するだけ！ */
+    }
+  }
+
+}
+/* MediaQuery end */

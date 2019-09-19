@@ -1,0 +1,17 @@
+
+
+
+
+/* MediaQuery */
+
+@media only screen and (min-width: $break-point-pc) {
+  .contianer{
+    max-width: 960px;
+  }
+  .swiper-container {
+    width: 100%;
+    height: 500px;
+}
+
+}
+/* MediaQuery end */

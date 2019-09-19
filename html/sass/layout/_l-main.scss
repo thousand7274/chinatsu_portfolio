@@ -1,0 +1,15 @@
+/* MediaQuery */
+@media only screen and (min-width: $break-point-pc) {
+  .container{
+    max-width:980px;
+    width: 100%;
+  }
+
+  .main{
+  display: flex;
+  flex-direction: column;
+  padding-left: 30%;
+}
+
+}
+/* MediaQuery end */

@@ -1,0 +1,113 @@
+/* お問い合わせ */
+$color-white :#fff;
+$color-blueblack:rgb(0, 13, 196);
+
+/* MediaQuery */
+@media only screen and (min-width: $break-point-pc) {
+
+}
+/* MediaQuery end */
+%text-form{
+  // margin:10px;
+  height: 30px;
+  width: 300px;
+  font: 16px sans-serif;
+  box-sizing: border-box;
+  padding: 0.3em;
+  transition: 0.3s;
+  letter-spacing: 1px;
+  color: $color-white;
+  border: none;
+  border-bottom: 2px solid $color-white ;
+  background: transparent;
+}
+%text-focus{
+  border-bottom: 2px solid  $color-blueblack;
+  outline: none;
+}
+.form-container{
+  background:transparent;
+  text-align: center;
+}
+.form-title{
+  padding: 15px;
+}
+.contact{
+  margin:0;
+  width: 100%;
+  min-width: 320px;
+  display: flex;
+  justify-content: center;
+
+  &--left{
+    display: flex;
+    flex-direction: column;
+    padding-right:30px;
+
+  }
+
+  &__name{
+    @extend %text-form;
+
+    &:focus{
+      @extend %text-focus;
+    }
+  }
+
+  &__email{
+    @extend %text-form;
+
+    &:focus{
+      @extend %text-focus;
+    }
+  }
+
+  &--right{
+    align-self: center;
+  }
+
+  &__content{
+    display: block;
+    height: 150px;
+    width: 300px;
+    font: 16px sans-serif;
+    box-sizing: border-box;
+    padding: 0.3em;
+    transition: 0.3s;
+    letter-spacing: 1px;
+    color: rgb(212, 212, 212);
+    border: 2px solid $color-white;
+    background: transparent;
+    border-radius: 10px;
+
+    &:focus{
+      border: 2px solid $color-blueblack;
+      outline: none;
+
+    }
+  }
+
+}
+.submit{
+  margin: 30px;
+  border-radius: 10px;
+  font-size: 22px;
+  padding: 10px 20px;
+  color: $color-white;
+  border-radius: 5px;
+  background-color:transparent;
+  border-radius: 5px;
+  border: 2px solid $color-white;
+
+  &:hover{
+    background-color: $color-white;
+    color: $color-blueblack;
+  }
+
+  &:active{
+    border: 2px solid $color-blueblack;
+    color:$color-blueblack;
+    }
+
+}
+/* /お問い合わせ */
