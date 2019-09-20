@@ -1,7 +1,9 @@
 
 .container{
   width: 100%;
+  background-color: $contents-bgc;
 }
+
 
 
 /* MediaQuery */
@@ -10,15 +12,16 @@
   .container{
     max-width:980px;
     width: 100%;
-
+    background-color: $contents-bgc;
+    padding:0 20px;
   }
 
   .main{
     display: flex;
     flex-direction: column;
     margin-left: 30%;
-    background-color: $contents-bgc;
-    padding:0 20px;
+    // background-color: $contents-bgc;
+
   }
 
 }

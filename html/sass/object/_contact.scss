@@ -38,7 +38,6 @@ $color-blueblack:rgb(0, 13, 196);
   &--left{
     display: flex;
     flex-direction: column;
-
   }
 
   &__name{
@@ -92,11 +91,13 @@ $color-blueblack:rgb(0, 13, 196);
   border-radius: 5px;
   background-color:transparent;
   border-radius: 5px;
-  border: 2px solid $color-white;
+  border: 2px solid rgba($color-white,.8);
 
   &:hover{
-    background-color: $color-white;
+    background-color: rgba($color-white,.8);
     color: $color-blueblack;
+    transition: all .5s ease-out;
+    cursor: pointer;
   }
 
   &:active{
@@ -109,11 +110,14 @@ $color-blueblack:rgb(0, 13, 196);
 
 /* MediaQuery */
 @media only screen and (min-width: $break-point-pc) {
-
+  .contact-container{
+    padding-bottom: 20%;
+  }
 
   .contact{
     display: flex;
     flex-direction: row;
+
 
 
     &--left{

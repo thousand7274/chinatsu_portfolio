@@ -5,83 +5,245 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Portfolio</title>
-  <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css">
   <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pace/1.0.2/themes/white/pace-theme-flash.min.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <!-- <i class="devicon-html5-plain-wordmark colored"></i>
-<i class="devicon-css3-plain-wordmark colored"></i>
-<i class="devicon-gulp-plain colored"></i>
-<i class="devicon-javascript-plain colored"></i>
-<i class="devicon-jquery-plain-wordmark colored"></i>
-<i class="devicon-sass-original colored"></i>
-<i class="devicon-bootstrap-plain-wordmark colored"></i>
-<i class="devicon-wordpress-plain-wordmark colored"></i>
-<i class="devicon-php-plain colored"></i>
-<i class="devicon-visualstudio-plain colored"></i> -->
   <main>
-
     <!-- サイドとメインを分けるためwrapper -->
     <div class="wrapper">
       <div class="menu">
         <ul class="menu__one">
           <li class="menu-logo"><img src="img/1.5x/menu.png" alt="ロゴ:メニュー" height="40"></li>
 
-          <li class="menu-logo__list"><a href="#"><img src="img/1.5x/sakuhin.png" alt="ロゴ:サクヒン" height="35"></a></li>
+          <li class="menu-logo__list"><a href="#page01""><img src=" img/1.5x/sakuhin.png" alt="ロゴ:サクヒン" height="35"></a></li>
 
-          <li class="menu-logo__list"><a href="#"><img src="img/1.5x/photo.png" alt="ロゴ:フォト" height="35"></a></li>
-          <li class="menu-logo__list"><a href="#"><img src="img/1.5x/about.png" alt="ロゴ:アバウト" height="35"></a></li>
-          <li class="menu-logo__list"><a href="#"><img src="img/1.5x/language.png" alt="ロゴ:ランゲージ" height="35"></a></li>
-          <li class="menu-logo__list"><a href="#"><img src="img/1.5x/contact.png" alt="ロゴ:コンタクト" height="35"></a></li>
+          <li class="menu-logo__list"><a href="#page02"><img src="img/1.5x/photo.png" alt="ロゴ:フォト" height="35"></a></li>
+          <li class="menu-logo__list"><a href="#page03"><img src="img/1.5x/about.png" alt="ロゴ:アバウト" height="35"></a></li>
+          <li class="menu-logo__list"><a href="#page04"><img src="img/1.5x/language.png" alt="ロゴ:ランゲージ" height="35"></a></li>
+          <li class="menu-logo__list"><a href="#page05"><img src="img/1.5x/contact.png" alt="ロゴ:コンタクト" height="35"></a></li>
         </ul>
         <div class="menu__two">
-          <i class="devicon-twitter-plain colored"></i>
-          <i class="devicon-github-plain-wordmark"></i>
-          <i class="devicon-facebook-plain colored"></i>
+          <a href="https://twitter.com/thousand7274" target="_blank"><i class="devicon-twitter-plain colored"></i></a>
+          <a href="https://github.com/thousand7274" target="_blank"><i class="devicon-github-plain-wordmark colored"></i></a>
+          <a href="https://www.facebook.com/thousand7274" target="_blank"><i class="devicon-facebook-plain colored"></i></a>
         </div>
       </div>
-      <div class="main">
-        <h2 class="title short"><img src="img/1.5x/b-sakuhin.png" alt="タイトル:サクヒン" height="50"></h2>
 
+      <div class="main">
         <div class="container">
-          <h2 class="title short"><img src="img/1.5x/b-photo.png" alt="タイトル:フォト" height="50"></h2>
+          <h2 class="title short" id="page01"><img src="img/1.5x/b-sakuhin.png" alt="タイトル:サクヒン" height="50"></h2>
+          <div class="collection">
+            <div class="collection__img">
+              <a href="img/sakuhin/profile-site.png" data-lightbox="sakuhin" data-title="flexなどを教わって作ったサイト。写真をクリックするとjsを使用せずに画像が拡大するようにしました。<a href='https://profile-site.netlify.com/' target='_blank'>netlifyはこちら</a>"><img src="img/sakuhin/profile-site.png" alt="作品:プロフィールサイト" class="collection-img">
+                <div class="mask">
+                  <div class="mask__caption">
+                    <i class="devicon-html5-plain-wordmark colored"></i>
+                    <i class="devicon-css3-plain-wordmark colored"></i>
+                    <i class="devicon-visualstudio-plain colored"></i>
+                    <p>Profileサイト</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="collection__img">
+              <a href="img/sakuhin/omikuji.png" data-lightbox="sakuhin" data-title="jsを使った初めての作品。ポイントは画像をマウスオーバーすると震えるところ、大凶と大吉は背景が変わるところです。<a href='https://shakashaka.netlify.com/' target='_blank'>netlifyはこちら</a>"><img src="img/sakuhin/omikuji.png" alt="作品:おみくじ" class="collection-img">
+                <div class="mask">
+                  <div class="mask__caption">
+                    <i class="devicon-html5-plain-wordmark colored"></i>
+                    <i class="devicon-css3-plain-wordmark colored"></i>
+                    <i class="devicon-javascript-plain colored"></i>
+                    <i class="devicon-visualstudio-plain colored"></i>
+                    <p>おみくじ引いてみる？</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="collection__img">
+              <a href="img/sakuhin/yotsude-boot.png" data-lightbox="sakuhin" data-title="Bootstrapで四つ手小屋のHPを制作。mapのレスポンシブ対応、スクロールした時に右からtopへ戻るが出てくるように工夫しました。<a href='https://yotsude.netlify.com/' target='_blank'>netlifyはこちら</a>">
+                <img src="img/sakuhin/yotsude-boot.png" alt="作品:四つ手小屋(Bootstrap)" class="collection-img">
+                <div class="mask">
+                  <div class="mask__caption"><i class="devicon-html5-plain-wordmark colored"></i>
+                    <i class="devicon-css3-plain-wordmark colored"></i>
+                    <i class="devicon-jquery-plain-wordmark colored"></i>
+                    <i class="devicon-bootstrap-plain-wordmark colored"></i>
+                    <i class="devicon-visualstudio-plain colored"></i>
+                    <p>四つ手小屋(Bootstrap ver.)</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="collection__img">
+              <a href="img/sakuhin/bootstrap.png" data-lightbox="sakuhin" data-title="初めてGitを使用した共同作業を行ないました。YOUTUBE,マップがレスポンシブ対応するように工夫しました。<a href='https://bootstrap-ojt.netlify.com/' target='_blank'>netlifyはこちら</a>">
+                <img src="img/sakuhin/bootstrap.png" alt="作品:千夏と郁弥の初めての共同作業" class="collection-img">
+                <div class="mask">
+                  <div class="mask__caption"><i class="devicon-html5-plain-wordmark colored"></i>
+                    <i class="devicon-css3-plain-wordmark colored"></i>
+                    <i class="devicon-jquery-plain-wordmark colored"></i>
+                    <i class="devicon-bootstrap-plain-wordmark colored"></i>
+                    <i class="devicon-visualstudio-plain colored"></i>
+                    <p>千夏と郁弥の初めての共同作業</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="collection__img">
+              <a href="img/sakuhin/webAPI.png" data-lightbox="sakuhin" data-title="<a href='https://team-norinori.netlify.com' target='_blank'></a>">
+                <img src="img/sakuhin/webAPI.png" alt="作品:webAPIでレストランリサーチ(共同作業）" class="api-img">
+                <div class="mask">
+                  <div class="mask__caption"><i class="devicon-html5-plain-wordmark colored"></i>
+                    <i class="devicon-css3-plain-wordmark colored"></i>
+                    <i class="devicon-jquery-plain-wordmark colored"></i>
+                    <i class="devicon-bootstrap-plain-wordmark colored"></i>
+                    <i class="devicon-visualstudio-plain colored"></i>
+                    <p>WebAPIでレストラン検索（共同作業）</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="collection__img">
+              <a href="img/sakuhin/wordpress.png" data-lightbox="sakuhin" data-title="Wordpressで制作しました。予約プラグイン、天気予報プラグインを使用し、ブログページも作成しました。<a href='https://github.com/thousand7274/wp-theme.git' target='_blank'>Githubはこちら</a>">
+                <img src="img/sakuhin/wordpress.png" alt="作品:四つ手小屋近藤" class="collection-img">
+                <div class="mask">
+                  <div class="mask__caption">
+                    <i class="devicon-css3-plain-wordmark colored"></i>
+                    <i class="devicon-gulp-plain colored"></i>
+                    <i class="devicon-sass-original colored"></i>
+                    <i class="devicon-wordpress-plain-wordmark"></i>
+                    <i class="devicon-php-plain colored"></i>
+                    <i class="devicon-visualstudio-plain colored"></i>
+                    <p>四つ手小屋近藤(Wordpress ver.)</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="collection__img">
+              <a href="img/sakuhin/teamnorinori.png" data-lightbox="sakuhin" data-title="岡山海苔のHP制作しました。ヘッダーとメインの間にボーダーと船を重ねて海っぽくしました。gulpを使用した共同作品です。<a href='https://team-norinori.netlify.com' target='_blank'>netlifyはこちら</a>">
+                <img src="img/sakuhin/teamnorinori.png" alt="作品:岡山海苔(共同作業)" class="collection-img">
+                <div class="mask">
+                  <div class="mask__caption">
+                    <i class="devicon-css3-plain-wordmark colored"></i>
+                    <i class="devicon-gulp-plain colored"></i>
+                    <i class="devicon-jquery-plain-wordmark colored"></i>
+                    <i class="devicon-sass-original colored"></i>
+                    <i class="devicon-wordpress-plain-wordmark"></i>
+                    <i class="devicon-php-plain colored"></i>
+                    <i class="devicon-visualstudio-plain colored"></i>
+                    <p>岡山海苔:チームノリノリ(共同作業)</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="collection__img">
+              <a href="img/sakuhin/ojt.png" data-lightbox="sakuhin" data-title="OJTとしてアメリカンビレッジのHPを制作。ヘッダー、メイン画像、フッター、WordPressを担当。もっとみるプラグインを使用。<a href='https://github.com/fu38t-da/wordpress_ojt' target='_blank'>Githubはこちら</a>">
+                <img src="img/sakuhin/ojt.png" alt="作品:OJT(共同作業)" class="collection-img">
+                <div class="mask">
+                  <div class="mask__caption">
+                    <i class="devicon-css3-plain-wordmark colored"></i>
+                    <i class="devicon-gulp-plain colored"></i>
+                    <i class="devicon-jquery-plain-wordmark colored"></i>
+                    <i class="devicon-sass-original colored"></i>
+                    <i class="devicon-wordpress-plain-wordmark"></i>
+                    <i class="devicon-php-plain colored"></i>
+                    <i class="devicon-visualstudio-plain colored"></i>
+                    <p>OJT AmericanVillage(共同作業)</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <h2 class="title short" id="page02"><img src="img/1.5x/b-photo.png" alt="タイトル:フォト" height="50"></h2>
           <div class="photo-wrapper">
             <div class="photo">
-              <img src="img/photo/全体1.jpg" alt="藤まつり全体写真" width="300">
-              <img src="img/photo/藤.jpg" alt="藤の花" width="300">
-              <img src="img/photo/藤2.jpg" alt="ちょっと丸い藤の花" width="300">
-              <img src="img/photo/藤3.jpg" alt="画面いっぱいの藤の花" width="300">
-              <img src="img/photo/藤4.jpg" alt="白い藤の花の全体" width="300">
-              <img src="img/photo/藤5.jpg" alt="白い藤の花アップ" width="300">
-              <img src="img/photo/藤6.jpg" alt="藤のカーテン奥に人" width="300">
-              <img src="img/photo/藤7.jpg" alt="藤のカーテンちょっと暗め" width="300">
+              <div class="photo__img">
+                <a href="img/photo/全体1.jpg" data-lightbox="photo" data-title="藤まつり">
+                  <img src="img/photo/全体1.jpg" alt="藤まつり全体写真" width="300">
+                  <div class="photo__mask">
+                  </div>
+                </a>
+              </div>
+              <div class="photo__img">
+                <a href="img/photo/藤.jpg" data-lightbox="photo" data-title="藤まつり">
+                  <img src="img/photo/藤.jpg" alt="藤の花" width="300">
+                  <div class="photo__mask">
+                  </div>
+                </a>
+              </div>
+              <div class="photo__img">
+                <a href="img/photo/藤2.jpg" data-lightbox="photo" data-title="藤まつり">
+                  <img src="img/photo/藤2.jpg" alt="ちょっと丸い藤の花" width="300">
+                  <div class="photo__mask">
+                  </div>
+                </a>
+              </div>
+              <div class="photo__img">
+                <a href="img/photo/藤3.jpg" data-lightbox="photo" data-title="藤まつり">
+                  <img src="img/photo/藤3.jpg" alt="画面いっぱいの藤の花" width="300">
+                  <div class="photo__mask">
+                  </div>
+                </a>
+              </div>
+              <div class="photo__img">
+                <a href="img/photo/藤4.jpg" data-lightbox="photo" data-title="藤まつり">
+                  <img src="img/photo/藤4.jpg" alt="白い藤の花の全体" width="300">
+                  <div class="photo__mask">
+                  </div>
+                </a>
+              </div>
+              <div class="photo__img">
+                <a href="img/photo/藤5.jpg" data-lightbox="photo" data-title="藤まつり">
+                  <img src="img/photo/藤5.jpg" alt="白い藤の花アップ" width="300">
+                  <div class="photo__mask">
+                  </div>
+                </a>
+              </div>
+              <div class="photo__img">
+                <a href="img/photo/藤6.jpg" data-lightbox="photo" data-title="藤まつり">
+                  <img src="img/photo/藤6.jpg" alt="藤のカーテン奥に人" width="300">
+                  <div class="photo__mask">
+                  </div>
+                </a>
+              </div>
+              <div class="photo__img">
+                <a href="img/photo/藤7.jpg" data-lightbox="photo" data-title="藤まつり">
+                  <img src="img/photo/藤7.jpg" alt="藤のカーテンちょっと暗め" width="300">
+                  <div class="photo__mask">
+                  </div>
+                </a>
+              </div>
             </div>
           </div>
 
 
-          <h2 class="title long"><img src="img/1.5x/b-about.png" alt="タイトル:アバウトミー！" height="50"></h2>
+          <h2 class="title long" id="page03"><img src="img/1.5x/b-about.png" alt="タイトル:アバウトミー！" height="50"></h2>
           <div class="plofile">
             <div class="plofile__img">
-              <img src="img/plofile.jpg" alt="プロフィール画像:私" width="500">
+              <img src="img/plofile.jpg" alt="プロフィール画像:私" width="350">
             </div>
-            <div class="p-text">
-              <div class="p-text__about">
-                私についてここに書いていきます。<br>
-                今は何も考えていないから仮置きですよー。<br>
-                4列ぐらい書いておきたいけどそろそろかくことないなー<br>
-                はーい
-              </div>
-              <div class="p-text__skill">
-              </div>
-              <div class="p-text__hobby">
-                釣り<br>
-                音楽鑑賞（バンドとかperfumeとか）<br>
-                ゲーム（下手だから人のをみることが多い）
+            <div class="p-text-wrapper">
+              <h3><span class="p-text-span">H</span>ello!
+                I'm Chinatsu!!!</h3>
+              <div class="p-text">
+                <div class="p-text__about">
+                  <ul>
+                    <li>Name: Chinatsu</li>
+                    <li>Like: 音楽を聴く,釣り,ゲーム,写真を撮る</li>
+                    <li>Word:
+                      <ul class="word-list">
+                        <li>諦めたらそこで試合終了ですよ</li>
+                        <li>思い立ったが吉日</li>
+                        <li>やらないで後悔よりやって反省</li>
+                      </ul>
+                    <li>コードを書くこと、考えること<br>
+                      お酒を飲むこと、笑うことが大好きです。<br class="sp-br">好奇心旺盛！</li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
-          <h2 class="title long t-language"><img src="img/1.5x/b-language.png" alt="タイトル:アイキャンユーズ" height="35"></h2>
+          <h2 class="title long t-language" id="page04"><img src="img/1.5x/b-language.png" alt="タイトル:アイキャンユーズ" height="35"></h2>
           <div class="language">
             <div class="language__top">
               <i class="devicon-html5-plain-wordmark colored"></i>
@@ -93,28 +255,28 @@
             <div class="language__bottom">
               <i class="devicon-sass-original colored"></i>
               <i class="devicon-bootstrap-plain-wordmark colored"></i>
-              <i class="devicon-wordpress-plain-wordmark colored"></i>
+              <i class="devicon-wordpress-plain-wordmark"></i>
               <i class="devicon-php-plain colored"></i>
               <i class="devicon-visualstudio-plain colored"></i>
             </div>
           </div>
           <div class="form-container">
-            <h2 class="title short"><img src="img/1.5x/b-contact.png" alt="タイトル:コンタクト" height="50"></h2>
+            <h2 class="title short" id="page05"><img src="img/1.5x/b-contact.png" alt="タイトル:コンタクト" height="50"></h2>
             <div class="contact-container">
               <div class="contact">
                 <div class="contact--left">
                   <form action="" method="POST">
                     <div>
-                      <p class="form-title">ニックネーム</p><br>
-                      <input type="text" name="nickname" class="contact__name">
+                      <p class="form-title" id="name">Name.</p><br>
+                      <input type="text" name="nickname" class="contact__name" id="name">
                     </div>
                     <div>
-                      <p class="form-title">メールアドレス</p><br>
+                      <p class="form-title">Address.</p><br>
                       <input type="text" name="email" class="contact__email">
                     </div>
                 </div>
                 <div class="contact--right">
-                  <p class="form-title">お問い合わせ内容</p><br>
+                  <p class="form-title">Contens.</p><br>
                   <textarea name="content" class="contact__content"></textarea>
                 </div>
               </div>
@@ -123,7 +285,7 @@
             </div>
           </div>
           <footer>
-            <small>©️copyright.</small>
+            <small>copyright(c) 2019 Chinatsu portfolio.</small>
           </footer>
         </div>
       </div>
@@ -139,10 +301,15 @@
 
   <!-- /スマホのみ -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pace/1.0.2/pace.min.js"></script>
   <script src="js/app.js"></script>
   <script>
-
+    lightbox.option({
+      'resizeDuration': 200,
+      'wrapAround': true
+    })
   </script>
+
 </body>
 </html>

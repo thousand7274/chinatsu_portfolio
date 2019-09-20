@@ -4,13 +4,44 @@
   padding:0;
 
   &__img{
-    max-width:500px;
+    max-width:400px;
+    margin: 0;
+
 
     & img{
       width: 100%;
+
     }
   }
 }
+.p-text-wrapper{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+
+    & h3{
+      font-size: 24px;
+      text-align: center;
+      margin-bottom: 5%;
+    }
+  }
+
+  .p-text{
+    line-height: 1.7;
+    align-self: center;
+
+    &-span{
+        color:rgb(158, 81, 245);
+        font-size: 36px;
+      }
+
+    &__about{
+      line-height: 2.5;
+    }
+  }
+  .word-list{
+    margin-left:13%;
+  }
 
 
 /* MediaQuery */
@@ -21,17 +52,45 @@
   .plofile{
     display: flex;
     flex-direction: row;
+    justify-content: center;
 
     &__img{
       margin-right: 30px;
+      max-width:400px;
+      width: 100%;
+
     }
 
+  }
+  .p-text-wrapper{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    & h3{
+      font-size: 32px;
+      margin-bottom: 0;
+    }
   }
 
   .p-text{
     line-height: 1.7;
     align-self: center;
 
+    &-span{
+        color:rgb(158, 81, 245);
+        font-size: 48px;
+      }
+
+    &__about{
+      line-height: 2.0;
+    }
+  }
+  .word-list{
+    margin-left:5%;
+  }
+  .sp-br{
+    display: none;
   }
 }
 /* MediaQuery end */
