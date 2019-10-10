@@ -42,7 +42,7 @@
     position: absolute;
     top:0;
     left: 0;
-    // opacity: .3;
+    opacity: .3;
     background-color: rgba(0,0,0,.6);
     transition: all 0.2s ease;
 
@@ -51,7 +51,7 @@
         font-size: 130%;
         text-align: center;
         align-self: center;
-        // opacity:0;
+        opacity:0;
 
         & i{
           font-size:32px;
@@ -89,6 +89,7 @@
       &__img{
 
           position:relative;
+        }
 
         &:hover .mask{
           opacity: .9;
@@ -98,7 +99,7 @@
           }
 
         }
-      }
+
     }
   .api-img{
 
@@ -115,7 +116,7 @@
     position: absolute;
     top:0;
     left: 0;
-    opacity: .3;
+    opacity: 0;
     background-color: rgba(0,0,0,.8);
     transition: all 0.2s ease;
 
